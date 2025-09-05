@@ -7,3 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+const boton = document.getElementById("boton");
+boton.addEventListener("click", (event) => {
+    alert("Hola!");
+    event.stopPropagation();
+});
